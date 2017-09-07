@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.ibuy.misa.ibuy.PanierFragment">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="167dp"
+                android:layout_height="match_parent"
+                android:text="Total"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="18sp"
+                android:theme="@style/AlertDialog.AppCompat.Light" />
+
+            <TextView
+                android:id="@+id/tTotal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="20dp"
+                android:text="0 Ar"
+                android:textAlignment="textEnd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="18sp"
+                android:theme="@style/AlertDialog.AppCompat.Light" />
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recPanier"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar2"
+        android:background="@android:color/white" />
+
+
+    <TextView
+        android:id="@+id/textAdresse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fabEditAdresse"
+        android:layout_alignParentEnd="true"
+        android:layout_alignRight="@+id/fabEditAdresse"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="90dp"
+        android:background="#FF041926"
+        android:padding="5dp"
+        android:text="Editer l'adresse de livraison"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabEditAdresse"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignBottom="@+id/fabSend"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/ic_adresse_filled"
+        android:visibility="visible"
+        app:backgroundTint="@android:color/holo_green_dark"
+        app:elevation="6dp"
+        app:fabSize="mini"
+        app:pressedTranslationZ="12dp" />
+
+    <TextView
+        android:id="@+id/textMagasinFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fabOption"
+        android:layout_alignParentEnd="true"
+        android:layout_alignRight="@+id/fabOption"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="90dp"
+        android:background="#FF041926"
+        android:padding="5dp"
+        android:text="Envoyer la commande"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabSend"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignBottom="@+id/fabOption"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/ic_send"
+        android:visibility="visible"
+        app:backgroundTint="@android:color/holo_green_dark"
+        app:elevation="6dp"
+        app:fabSize="mini"
+        app:pressedTranslationZ="12dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:clickable="true"
+        app:elevation="0dp"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_menu_filled" />
+</RelativeLayout>

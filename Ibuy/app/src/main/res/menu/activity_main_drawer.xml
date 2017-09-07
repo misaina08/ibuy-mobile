@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_accueil"
+            android:icon="@drawable/ic_home_filled"
+            android:title="Accueil" />
+        <item
+            android:id="@+id/nav_menu_inscrire"
+            android:icon="@drawable/ic_inscription"
+            android:title="S'inscrire" />
+        <item
+            android:id="@+id/nav_menu_connect"
+            android:icon="@drawable/ic_login"
+            android:title="Se connecter" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu_profil"
+            android:icon="@drawable/ic_profil"
+            android:title="Mon profil" />
+        <item
+            android:id="@+id/nav_menu_magasinsfavoris"
+            android:icon="@drawable/ic_favorite"
+            android:title="Magasins favoris" />
+        <item
+            android:id="@+id/nav_menu_souhaits"
+            android:icon="@drawable/ic_wishes"
+            android:title="Liste de souhaits" />
+        <item
+            android:id="@+id/nav_menu_mesrecherches"
+            android:icon="@drawable/ic_search_filled"
+            android:title="Mes recherches" />
+        <item
+            android:id="@+id/nav_menu_evt"
+            android:icon="@drawable/ic_event_filled"
+            android:title="Mes evenements" />
+        <item
+            android:id="@+id/nav_menu_notif"
+            android:icon="@drawable/ic_notification_filled"
+            android:title="Notification" />
+        <item
+            android:id="@+id/nav_menu_deconnect"
+            android:icon="@drawable/ic_logout"
+            android:title="Se déconnecter" />
+        <item
+            android:id="@+id/nav_menu_panier"
+            android:icon="@drawable/ic_event_filled"
+            android:title="Mon panier" />
+        <item
+            android:id="@+id/nav_menu_commande"
+            android:icon="@drawable/ic_event_filled"
+            android:title="Mes commandes" />
+
+    </group>
+
+</menu>

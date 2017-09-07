@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="86dp"
+            android:layout_height="84dp"
+            app:srcCompat="@drawable/googleg_standard_color_18" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tDesignation"
+                style="@style/TextNormal"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:gravity="fill_vertical"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/tMagasin"
+                style="@style/TextSub"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:gravity="fill_vertical"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/tPrix"
+                style="@style/TextTitle"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:gravity="fill_vertical"
+                android:text="TextView"
+                android:textAlignment="textEnd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bMoins"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40"
+                    android:background="@drawable/button_grey_selector"
+                    android:text="-" />
+
+                <TextView
+                    android:id="@+id/tQte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="fill_vertical|fill_horizontal"
+                    android:text="TextView"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/bPlus"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40"
+                    android:background="@drawable/button_grey_selector"
+                    android:text="+" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/Divider"></View>
+</LinearLayout>

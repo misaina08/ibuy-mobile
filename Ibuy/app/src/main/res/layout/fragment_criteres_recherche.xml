@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context="com.ibuy.misa.ibuy.CriteresRechercheFragment"
+    android:weightSum="1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="298dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.24"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/TextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Plus de critères" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/TextNormal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Magasin" />
+
+        <Spinner
+            android:id="@+id/spinMagasin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/TextNormal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Catégorie" />
+
+        <Spinner
+            android:id="@+id/spinCategorie"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/ePmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Prix min"
+                android:inputType="numberDecimal" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/ePmax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Prix max"
+                android:inputType="numberDecimal" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+</LinearLayout>
